@@ -1,70 +1,28 @@
-# Getting Started with Create React App
+CommunionHub - React Task
+📌 Task Overview
+This task involved building a two-page React web app for event listing with navigation, filtering, and form handling.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+🚀 Features & Implementation
+✅ Home Page
+Displayed a welcome message introducing CommunionHub.
+Designed a hero section with a title, description, and a "Explore Events" button that navigates to the Events page using useNavigate().
+Implemented a navigation bar with links to Home, Events, and About using Link from React Router.
 
-## Available Scripts
+✅ About Page
+Added a Mission Statement explaining the purpose of CommunionHub.
+Created a "What We Offer" section with grid-based event categories.
+Styled grids with hover effects, rounded corners, and smooth transitions.
+Included a "Back to Home" button (circular, positioned at the top-left).
 
-In the project directory, you can run:
+✅ Events Page
+Displayed a list of upcoming events with Title, Date, Location, Category, and Description.
+Implemented a filtering feature to filter events by category (Religious, Social, Charity).
+Added an "Add Event" button that toggles a hidden form for adding new events.
+Used useState() to manage form inputs and update the events list dynamically.
+Included a "Back to Home" button (circular, top-left).
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+✅ Implementation Details
+React Router was used for smooth navigation between pages.
+useNavigate() was used to handle button-based navigation.
+CSS: Applied modern styling, gradient backgrounds, hover effects, and responsive layouts.
+Responsive Design: Ensured UI works on both desktop and mobile devices.
