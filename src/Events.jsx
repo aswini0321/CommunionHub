@@ -1,24 +1,24 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom"; // ✅ Import useNavigate
+import { useNavigate } from "react-router-dom";
 import "./Events.css";
 
 const Events = () => {
-  const navigate = useNavigate(); // ✅ Initialize navigation
+  const navigate = useNavigate(); 
 
-  // Sample event data
+  
   const [events, setEvents] = useState([
     { id: 1, title: "Charity Drive", date: "2025-03-20", location: "NYC", category: "Charity", description: "Helping underprivileged kids." },
     { id: 2, title: "Faith Gathering", date: "2025-04-05", location: "LA", category: "Religious", description: "Community prayer event." },
     { id: 3, title: "Social Meetup", date: "2025-04-15", location: "San Francisco", category: "Social", description: "Networking with professionals." }
   ]);
 
-  // State for filtering
+
   const [filter, setFilter] = useState("All");
 
-  // State for form visibility
+
   const [showForm, setShowForm] = useState(false);
 
-  // State for form inputs
+
   const [newEvent, setNewEvent] = useState({
     title: "",
     date: "",
@@ -27,28 +27,28 @@ const Events = () => {
     description: "",
   });
 
-  // Filter events based on category
+  
   const filteredEvents = filter === "All" ? events : events.filter(event => event.category === filter);
 
-  // Handle form input changes
+  
   const handleInputChange = (e) => {
     setNewEvent({ ...newEvent, [e.target.name]: e.target.value });
   };
 
-  // Add new event
+
   const handleAddEvent = (e) => {
     e.preventDefault();
     if (newEvent.title && newEvent.date && newEvent.location && newEvent.description) {
       setEvents([...events, { id: events.length + 1, ...newEvent }]);
       setNewEvent({ title: "", date: "", location: "", category: "Religious", description: "" });
-      setShowForm(false); // Hide form after submission
+      setShowForm(false); 
     }
   };
 
   return (
     <div className="events-page">
     <div className="events-container">
-      {/* 🔙 Back to Home Button (Now at the TOP LEFT) */}
+    
       <div className="top-left">
         <button className="back-home-btn" onClick={() => navigate("/")}>
           ⬅
@@ -57,7 +57,7 @@ const Events = () => {
 
       <h1>Upcoming Events</h1>
 
-      {/* Filter Dropdown */}
+    
       <div className="filter-container">
         <label>Filter by Category:</label>
         <select value={filter} onChange={(e) => setFilter(e.target.value)}>
@@ -68,7 +68,7 @@ const Events = () => {
         </select>
       </div>
 
-      {/* Event List */}
+    
       <div className="event-list">
         {filteredEvents.length > 0 ? (
           filteredEvents.map(event => (
@@ -85,12 +85,13 @@ const Events = () => {
         )}
       </div>
 
-      {/* Toggle Add Event Form */}
+
       <button className="toggle-form-btn" onClick={() => setShowForm(!showForm)}>
         {showForm ? "Cancel" : "Add Event"}
       </button>
 
-      {/* Add New Event Form (Initially Hidden) */}
+      
+
       {showForm && (
         <div className="add-event-form">
           <h2>Add New Event</h2>

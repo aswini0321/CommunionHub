@@ -1,9 +1,9 @@
-/* Global Styles */
+
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #0d1b2a; /* Dark background for contrast */
+    background-color: #0d1b2a; 
     color: white;
   }
   
@@ -19,12 +19,14 @@ body {
  /* Import a fancy Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@700&display=swap');
 
+
+
 /* Logo Styling */
 .logo {
   font-size: 32px;
   font-weight: bold;
   text-decoration: none;
-  font-family: 'Kaushan Script', cursive; /* Stylish handwritten font */
+  font-family: 'Kaushan Script', cursive; 
 
   background: linear-gradient(135deg, #eff0f1, #e0e4e8);
   letter-spacing: 2px;
@@ -97,9 +99,10 @@ body {
     background-color: #45c2d1;
   }
   
-  /* 📌 Responsive Styles */
+  /* Responsive Styles */
   @media (max-width: 768px) {
-    /* Stack header items */
+    
+
     .header {
       flex-direction: column;
       text-align: center;
@@ -112,8 +115,9 @@ body {
       gap: 10px;
       padding-top: 10px;
     }
+
   
-    /* Make hero text smaller */
+    /* hero text smaller */
     .hero-content h1 {
       font-size: 36px;
     }
@@ -122,6 +126,7 @@ body {
       font-size: 18px;
     }
   
+
     /* Reduce button size for mobile */
     .explore-btn {
       padding: 12px 25px;

@@ -1,4 +1,4 @@
-/* 🌟 Back to Home Button (Top Left) */
+
 .about-top-left {
   position: absolute;
   top: 20px;
@@ -27,6 +27,7 @@
   transform: scale(1.1);
 }
 
+
 /* 🌟 About Page Container */
 .about-container {
   max-width: 1000px;
@@ -35,15 +36,17 @@
   text-align: center;
 }
 
+
 /* 🌟 Section Styling */
 .about-intro, .about-mission, .about-what-we-offer, .about-join-us {
-  background: #f0f7ff; /* ✅ Light blue background */
+  background: #f0f7ff; 
   padding: 40px;
   margin-bottom: 20px;
-  border-radius: 15px; /* ✅ More rounded corners */
+  border-radius: 15px; 
   box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
+
 
 /* ✨ Smooth Hover Effect */
 .about-intro:hover, .about-mission:hover, .about-what-we-offer:hover, .about-join-us:hover {
@@ -51,9 +54,9 @@
   box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* 📌 Headings */
+/*Headings */
 .about-container h1, .about-container h2 {
-  color: #1e3a5f; /* Deep navy blue */
+  color: #1e3a5f; 
   font-weight: 700;
 }
 
@@ -67,14 +70,15 @@
   margin-bottom: 10px;
 }
 
-/* 📌 Paragraph Styling */
+
 .about-container p {
   font-size: 18px;
   line-height: 1.6;
   color: #444;
 }
 
-/* 🌟 What We Offer Grid */
+
+
 .about-offer-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -82,25 +86,28 @@
   margin-top: 20px;
 }
 
-/* 🎨 Grid Item Styling */
+
+/* Grid Item Styling */
 .about-offer-item {
-  background: linear-gradient(135deg, #d0f0ff, #a0d8ff); /* ✅ Light gradient */
+  background: linear-gradient(135deg, #d0f0ff, #a0d8ff); 
   color: #003366;
   padding: 25px;
-  border-radius: 15px; /* ✅ Rounded corners */
+  border-radius: 15px; 
   text-align: center;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15); /* ✅ Softer shadow */
-  border-left: 6px solid #005f99; /* ✅ Stylish navy left border */
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15); 
+  border-left: 6px solid #005f99; 
 }
 
-/* ✨ Hover Effect */
+
+/*Hover Effect */
 .about-offer-item:hover {
   transform: scale(1.05);
   box-shadow: 6px 6px 18px rgba(0, 0, 0, 0.2);
 }
 
-/* 📌 Improve Text Styling */
+
+
 .about-offer-item h3 {
   font-size: 22px;
   margin-bottom: 10px;
@@ -113,23 +120,24 @@
   line-height: 1.5;
 }
 
-/* 🌟 Join Us Section */
+
 .about-join-us {
-  background: #e0f2ff; /* ✅ Light blue, soft feel */
-  color: #003366; /* ✅ Deep navy text for contrast */
+  background: #e0f2ff; 
+  color: #003366; 
   border-radius: 15px;
   padding: 40px;
-  box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.1); /* ✅ Softer shadow */
+  box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.1); 
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-/* ✨ Hover Effect */
+
+/* Hover Effect */
 .about-join-us:hover {
   transform: translateY(-5px);
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15);
 }
 
-/* 📌 Paragraph Color */
+
 .about-join-us p {
   color: #004c80;
 }
@@ -137,7 +145,7 @@
 
 
 
-/* 📌 Responsive Design */
+/*Responsive Design */
 @media (max-width: 768px) {
   .about-container {
     padding: 20px;

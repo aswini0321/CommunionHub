@@ -1,20 +1,19 @@
 import React from "react";
 import "./About.css";
-import { Link, useNavigate } from "react-router-dom"; // ✅ Added useNavigate
+import { Link, useNavigate } from "react-router-dom"; 
 
 const About = () => {
-  const navigate = useNavigate(); // ✅ Initialize navigation
+  const navigate = useNavigate(); 
 
   return (
     <div className="about-container">
-      {/* 🔙 Back to Home Button (Top Left) */}
       <div className="about-top-left">
         <button className="about-back-home-btn" onClick={() => navigate("/")}>
           ⬅
         </button>
       </div>
 
-      {/* Intro Section */}
+      
       <section className="about-intro">
         <h1>About CommunionHub</h1>
         <p>
@@ -24,7 +23,7 @@ const About = () => {
         </p>
       </section>
 
-      {/* Mission Section */}
+    
       <section className="about-mission">
         <h2>Our Mission</h2>
         <p>
@@ -33,7 +32,7 @@ const About = () => {
         </p>
       </section>
 
-      {/* What We Offer Section */}
+      
       <section className="about-what-we-offer">
         <h2>What We Offer</h2>
         <div className="about-offer-grid">
@@ -56,7 +55,7 @@ const About = () => {
         </div>
       </section>
 
-      {/* Join Us Section */}
+      
       <section className="about-join-us">
         <h2>Join Us</h2>
         <p>

@@ -1,4 +1,4 @@
-/* 📌 Events Page Container */
+/*Events Page Container */
 .events-container {
   max-width: 800px;
   margin:  10px auto;
@@ -9,8 +9,8 @@
   color: #333;
   border-radius: 20px;
 }
-/* 🌟 Back to Home Button (TOP LEFT) */
-/* 🌟 Back to Home Button (Circular & Top Left) */
+
+/* Back to Home Button*/
 .top-left {
   position: absolute;
   top: 20px;
@@ -18,11 +18,11 @@
 }
 
 .back-home-btn {
-  background-color:white ; /* Navy Blue */
+  background-color:white ; 
   color:#001f3f;
   width: 50px;
   height: 50px;
-  border-radius: 50%; /* ✅ Makes it a perfect circle */
+  border-radius: 50%; 
   border: none;
   font-size: 18px;
   font-weight: bold;
@@ -35,26 +35,28 @@
 }
 
 .back-home-btn:hover {
-  background-color: #003366; /* Darker Navy */
-  transform: scale(1.1); /* Slightly bigger on hover */
+  background-color: #003366;
+  transform: scale(1.1); 
 }
 
 
 .back-home-btn:hover {
-  background-color: #003366; /* Darker Navy */
+  background-color: #003366; 
   transform: scale(1.05);
 }
 
-/* 📌 Page Heading */
+
+/*  Page Heading */
 .events-container h1 {
   font-size: 36px;
   font-weight: bold;
-  color: #001f3f; /* Navy Blue */
+  color: #001f3f; 
   margin-bottom: 25px;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* 📌 Filter Section */
+
+/*Filter Section */
 .filter-container {
   margin-bottom: 30px;
 }
@@ -77,10 +79,10 @@
 }
 
 .filter-container select:hover {
-  border-color: #001f3f; /* Navy Blue */
+  border-color: #001f3f; 
 }
 
-/* 📌 Event List */
+/*Event List */
 .event-list {
   display: flex;
   flex-wrap: wrap;
@@ -89,7 +91,8 @@
   margin-bottom: 40px;
 }
 
-/* 📌 Event Card */
+
+/* Event Card */
 .event-card {
   background: linear-gradient(135deg, #ffffff, #e3f2fd);
   padding: 25px;
@@ -98,7 +101,7 @@
   width: 320px;
   text-align: left;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  border-left: 6px solid #001f3f; /* Navy Blue Border */
+  border-left: 6px solid #001f3f; 
 }
 
 .event-card:hover {
@@ -107,7 +110,7 @@
 }
 
 .event-card h2 {
-  color: #001f3f; /* Navy Blue */
+  color: #001f3f; 
   font-size: 22px;
   margin-bottom: 10px;
 }
@@ -118,7 +121,8 @@
   color: #555;
 }
 
-/* 📌 Add Event Button */
+
+/* Add Event Button */
 .toggle-form-btn {
   background: linear-gradient(135deg, #001f3f, #003366);
   color: white;
@@ -136,7 +140,8 @@
   transform: scale(1.05);
 }
 
-/* 📌 Add Event Form */
+
+/* Add Event Form */
 .add-event-form {
   background: white;
   padding: 30px;
@@ -151,7 +156,7 @@
 .add-event-form h2 {
   margin-bottom: 15px;
   text-align: center;
-  color: #001f3f; /* Navy Blue */
+  color: #001f3f; 
 }
 
 .add-event-form form {
@@ -172,20 +177,22 @@
   transition: all 0.3s ease-in-out;
 }
 
-/* 📌 Input Hover Effects */
+
+/*Input Hover Effects */
 .add-event-form input:hover,
 .add-event-form select:hover,
 .add-event-form textarea:hover {
   border-color: #001f3f; /* Navy Blue */
 }
 
-/* 📌 Textarea */
+
+/*Textarea */
 .add-event-form textarea {
   resize: none;
   height: 80px;
 }
 
-/* 📌 Submit Button */
+/* Submit Button */
 .add-event-form button {
   background: linear-gradient(135deg, #001f3f, #003366);
   color: white;
@@ -200,7 +207,7 @@
   transform: scale(1.05);
 }
 
-/* 📌 Responsive */
+/* Responsive */
 @media (max-width: 768px) {
   .event-list {
     flex-direction: column;
