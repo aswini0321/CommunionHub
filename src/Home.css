@@ -1,0 +1,131 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0d1b2a; /* Dark background for contrast */
+    color: white;
+  }
+  
+  /* Header Styling */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 15px 30px;
+  }
+  
+ /* Import a fancy Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@700&display=swap');
+
+/* Logo Styling */
+.logo {
+  font-size: 32px;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: 'Kaushan Script', cursive; /* Stylish handwritten font */
+
+  background: linear-gradient(135deg, #eff0f1, #e0e4e8);
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  transition: all 0.3s ease-in-out;
+}
+
+
+  /* Navigation Links */
+  .nav-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .nav-links a:hover {
+    color: #007bff;
+  }
+  .nav-links a:hover {
+    color: #007bff;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Hero Content */
+  .hero-content {
+    max-width: 800px;
+    padding: 20px;
+  }
+  
+  .hero-content h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
+  
+  .hero-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  
+  /* CTA Button */
+  .explore-btn {
+    background-color: #5edaf0;
+    color: black;
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4);
+    transition: all 0.3s ease;
+  }
+  
+  .explore-btn:hover {
+    background-color: #45c2d1;
+  }
+  
+  /* 📌 Responsive Styles */
+  @media (max-width: 768px) {
+    /* Stack header items */
+    .header {
+      flex-direction: column;
+      text-align: center;
+      padding: 10px;
+    }
+  
+    /* Stack navigation links */
+    .nav-links {
+      flex-direction: column;
+      gap: 10px;
+      padding-top: 10px;
+    }
+  
+    /* Make hero text smaller */
+    .hero-content h1 {
+      font-size: 36px;
+    }
+  
+    .hero-content p {
+      font-size: 18px;
+    }
+  
+    /* Reduce button size for mobile */
+    .explore-btn {
+      padding: 12px 25px;
+      font-size: 18px;
+    }
+  }
+  

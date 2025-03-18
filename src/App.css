@@ -1,0 +1,52 @@
+/* 🌟 Fixed Navbar */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white; /* ✅ White Background */
+  color: white; /* ✅ Navy Blue Text */
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* ✅ Soft shadow */
+  z-index: 1000;
+}
+/* 🌟 Logo Styling */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #001f3f; /* ✅ Navy Blue */
+  font-family: 'Poppins', sans-serif;
+}
+
+.logo:hover {
+  color: #003366; /* ✅ Darker Navy on Hover */
+}
+
+/* 🌟 Navigation Links */
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #001f3f; /* ✅ Navy Blue */
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+  color: #003366; /* ✅ Slightly darker Navy on hover */
+}
+
+/* 🌟 Push Page Content Below Fixed Navbar */
+.page-content {
+  margin-top: 80px; /* ✅ Prevent content from going under navbar */
+  padding: 20px;
+}
