@@ -27,8 +27,7 @@ body {
   font-weight: bold;
   text-decoration: none;
   font-family: 'Kaushan Script', cursive; 
-
-  background: linear-gradient(135deg, #eff0f1, #e0e4e8);
+  color:#1e3a5f;
   letter-spacing: 2px;
   text-transform: capitalize;
   transition: all 0.3s ease-in-out;
